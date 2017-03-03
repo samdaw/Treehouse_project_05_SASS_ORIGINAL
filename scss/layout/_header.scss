@@ -1,0 +1,36 @@
+.banner {
+  padding: 40px 10px 20px 10px;
+  font-size: 1.05em;
+  color: $intro;
+  @include media(tablet) {
+    flex-direction: row-reverse;
+    text-align: left;
+    font-size: 21px;
+  }
+}
+
+.profile-picture {
+  width: 70%;
+  max-width: 367px;
+  padding-bottom: 40px;
+  @extend %center;
+  @include media(tablet) {
+    padding-bottom: 10px;
+    margin-left: 50px;
+  }
+  @include media(desktop) {
+    margin-left: 120px;
+    margin-right: 9px;
+  }
+}
+
+.profile-copy {
+  width: 80%;
+  max-width: 457px;
+  @extend %center;
+  padding-bottom: 20px;
+  @include media(tablet) {
+    max-width: none;
+    margin-left: 5px;
+  }
+}

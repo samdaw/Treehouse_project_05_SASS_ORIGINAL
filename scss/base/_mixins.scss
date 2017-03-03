@@ -1,0 +1,19 @@
+// Text
+@mixin text($size, $l-height: null, $weight: null) {
+  font-size: $size;
+  line-height: $l-height;
+  font-weight: $weight;
+}
+
+// Media Query
+@mixin media($break) {
+  @if $break == tablet {
+    @media (min-width: $brk-tablet) {
+      @content;
+    }
+  } @else if $break == desktop {
+    @media (min-width: $brk-desktop) {
+      @content;
+    }
+  }
+}

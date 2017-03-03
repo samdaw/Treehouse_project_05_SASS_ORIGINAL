@@ -1,0 +1,37 @@
+.portfolio {
+  background-color: $white;
+  @extend %radius;
+    .col {
+      padding: 22px 1em 4px;
+      @include media(tablet) {
+        flex: 1 50%;
+      }
+      @include media(desktop) {
+        flex: 1 33%;
+      }
+    p {
+      max-width: 400px;
+      @extend %center;
+      margin-bottom: 20px
+    }
+  }
+}
+
+.row {
+  padding-bottom: 40px;
+  @extend %center;
+  @include media(tablet) {
+    flex-wrap: wrap;
+  }
+}
+
+.skills {
+  background-color: initial;
+  .col {
+    @include media(desktop) {
+      flex: 1 25%;
+    }
+  }
+}
+
+

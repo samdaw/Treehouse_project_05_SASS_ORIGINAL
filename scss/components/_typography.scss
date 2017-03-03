@@ -1,0 +1,33 @@
+body {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: $text;
+  background-color: $bg;
+}
+
+p {
+  @include text(1em, 1.4, 300);
+}
+
+h1 {
+  @include text(1.7em, 1.5, 700);
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+h3 {
+  font-size: 1.1em;
+  font-weight: 400;
+  padding-bottom: 0;
+}
+
+h2 {
+  font-size: .9em;
+  padding-top: 35px;
+  padding-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: $text;
+}

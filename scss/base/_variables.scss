@@ -1,0 +1,14 @@
+// Color variables
+$white	:	#fff;
+$base	:	#000;
+$text 	:	lighten($base, 30%);
+$intro	:	lighten($base, 50%);
+$break	:	lighten($base, 90%);
+$bg		:	lighten($base, 97%);
+
+//Layout
+$max-width  :	1125px;
+
+//Breakpoints
+$brk-tablet    :	700px;
+$brk-desktop   :	1024px;
